@@ -218,13 +218,9 @@ Switching regions allows you to manage your resources more efficiently by placin
 
 #### Introduction with Real-World Example
 
-Imagine you run a small e-commerce website. You need a server to host your website and handle customer traffic. In the past, you might have bought and set up physical servers in a data center, which can be expensive and time-consuming. 
+Imagine you run a small e-commerce website and need a server to host your site and manage customer traffic. Traditionally, you would have had to purchase and set up physical servers in a data center, a process that’s both costly and time-consuming.
 
-**Amazon EC2** simplifies this process by allowing you to rent virtual servers in the cloud. With EC2, you can quickly spin up a virtual server, scale resources as needed, and only pay for what you use. 
-
-**Real-World Example:**
-
-Let’s say you’re preparing for a big sale on your website, and you expect a surge in traffic. With EC2, you can easily launch additional servers to handle the increased load. Once the sale is over, you can scale down, reducing your costs. This flexibility allows you to efficiently manage resources based on demand without investing in physical hardware.
+**Amazon EC2 (Elastic Compute Cloud)** simplifies this by letting you rent virtual servers in the cloud. With EC2, you can quickly launch a server, adjust resources as needed, and pay only for what you use. For example, if you're preparing for a big sale and expect a traffic surge, you can easily deploy additional EC2 instances to handle the increased load. Once the sale ends, you can scale down to reduce costs, all without the hassle and expense of physical hardware. This flexibility enables you to manage resources efficiently based on demand.
 
 #### Key Concepts
 
