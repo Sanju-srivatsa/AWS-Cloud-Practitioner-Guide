@@ -213,5 +213,62 @@ AWS Regions are crucial when deploying services to ensure compliance with data r
 
 Switching regions allows you to manage your resources more efficiently by placing them closer to your users, which reduces latency. It's also crucial for compliance with specific legal requirements in different countries.
 
+---
+### Amazon EC2 (Elastic Compute Cloud)
 
+#### Introduction
+
+Amazon EC2 (Elastic Compute Cloud) is a web service provided by Amazon Web Services (AWS) that allows you to create and manage virtual servers, known as instances, in the cloud. It provides resizable compute capacity and is used to run applications and manage workloads. EC2 makes it easy to scale up or down according to your needs, and you only pay for what you use.
+
+#### Key Concepts
+
+1. **Instance**: A virtual server in the cloud. Think of it as a computer you can rent by the hour or minute.
+2. **Instance Type**: Defines the hardware of the host computer used for your instance. Examples include t2.micro, m5.large, etc., with varying amounts of CPU, memory, and storage.
+3. **AMI (Amazon Machine Image)**: A template that contains the software configuration (OS, application server, applications) required to launch an instance.
+4. **Key Pair**: A security credential used to connect to your instance. It includes a public key (stored in AWS) and a private key (stored locally).
+5. **IAM Role**: Permissions assigned to instances, allowing them to interact with other AWS services.
+6. **Security Group**: Acts as a virtual firewall to control the traffic allowed to and from your instance.
+7. **Elastic IP**: A static IP address designed for dynamic cloud computing, allowing you to remap the address to another instance if needed.
+
+#### Example: Launching a Simple EC2 Instance
+
+Let’s walk through launching an EC2 instance with a step-by-step approach:
+
+1. **Log In and Navigate to EC2**:
+   - Go to the AWS Management Console.
+   - Search for "EC2" and select the EC2 Dashboard.
+
+2. **Launch a New Instance**:
+   - Click the "Launch Instance" button to start the process.
+
+3. **Select an Amazon Machine Image (AMI)**:
+   - Choose an AMI based on the operating system you want. For example, select "Amazon Linux 2" to use a basic, free tier-eligible Linux distribution.
+
+4. **Choose an Instance Type**:
+   - Select the instance type based on your needs. For this example, choose "t2.micro," which is free-tier eligible and suitable for basic use.
+
+5. **Configure Instance Details**:
+   - Set the number of instances (e.g., 1).
+   - Select the default VPC and subnet.
+   - Ensure the instance gets a public IP so it's accessible from the internet.
+
+6. **Create and Attach IAM Role**:
+   - Open a new tab and go to the IAM Management Console.
+   - Create a new role for EC2 with the necessary permissions (e.g., "AmazonEC2RoleforSSM" for Systems Manager access).
+   - Attach this role to your EC2 instance to enable remote management.
+
+7. **Add Storage**:
+   - Use the default storage size (e.g., 8 GB) and type (e.g., General Purpose SSD).
+
+8. **Review and Launch**:
+   - Review the settings and click "Launch."
+   - You can skip creating a key pair if using Systems Manager (SSM) for access.
+
+9. **Access and Manage Your Instance**:
+   - Once launched, you can view the instance's status and details.
+   - To stop or terminate the instance, use the "Actions" menu. Stopping saves cost by halting charges, while terminating deletes the instance and stops charges completely.
+
+#### Summary
+
+Amazon EC2 allows you to quickly deploy and manage virtual servers in the cloud, adjusting resources based on demand. For instance, you can use EC2 to run a web server or application, scaling as needed while only paying for what you use. By following the steps above, you can launch, configure, and manage an EC2 instance effectively.
 This guide serves as an introduction to AWS and cloud computing fundamentals, providing key insights and practical knowledge for those new to the cloud.
