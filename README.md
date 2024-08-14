@@ -272,5 +272,5 @@ Imagine you run a small e-commerce website and need a server to host your site a
 
 Amazon EC2 allows you to easily deploy and manage virtual servers in the cloud. Just like how you can rent a car for a trip, you can rent compute power with EC2, scale it based on your needs, and only pay for what you use. This flexibility is ideal for handling varying workloads, like during an online sale, without the hassle and cost of physical hardware.
 
-
+---
 This guide serves as an introduction to AWS and cloud computing fundamentals, providing key insights and practical knowledge for those new to the cloud.
