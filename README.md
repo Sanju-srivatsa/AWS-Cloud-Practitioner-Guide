@@ -1,32 +1,49 @@
 
-## **Comprehensive AWS and Cloud Computing Guide**
+## **AWS and Cloud Computing Guide**
 
 ### **Table of Contents**
 
-1. **[Introduction to Cloud Computing and AWS](#introduction-to-cloud-computing-and-aws)**
-   - What is AWS?
-   - What is Cloud Computing?
-   - Key Benefits of Cloud Computing
 
-2. **[Understanding AWS Global Infrastructure](#understanding-aws-global-infrastructure)**
-   - AWS Regions
-   - Availability Zones (AZs)
-   - AWS Edge Locations
-   - Local Zones
+1. **[AWS Guide: Understanding Cloud Computing](#aws-guide-understanding-cloud-computing)**
+   - [What is AWS?](#what-is-aws)
+   - [What is Cloud Computing?](#what-is-cloud-computing)
+   - [Key Benefits of Cloud Computing](#key-benefits-of-cloud-computing)
+   - [Types of Cloud Computing Services](#types-of-cloud-computing-services)
+   - [Cloud Computing Deployment Models](#cloud-computing-deployment-models)
 
-3. **[Navigating AWS Services](#navigating-aws-services)**
-   - Types of Cloud Computing Services
-   - Cloud Computing Deployment Models
+2. **[AWS Global Infrastructure: A Detailed Overview](#aws-global-infrastructure-a-detailed-overview)**
+   - [Introduction to AWS Global Infrastructure](#introduction-to-aws-global-infrastructure)
+   - [Core Components of AWS Global Infrastructure](#core-components-of-aws-global-infrastructure)
+     - [AWS Regions](#aws-regions)
+     - [Availability Zones (AZs)](#availability-zones-azs)
+     - [AWS Edge Locations](#aws-edge-locations)
+     - [Local Zones](#local-zones)
+   - [Key Benefits of AWS Global Infrastructure](#key-benefits-of-aws-global-infrastructure)
 
-4. **[Getting Started with AWS](#getting-started-with-aws)**
-   - Creating an AWS Account
-   - Setting Up Billing Preferences, Budgets, and Alarms
-   - IAM User Management and Security Best Practices
+3. **[AWS Global Infrastructure Guide](#aws-global-infrastructure-guide)**
+   - [Getting Started - Creating an AWS Account](#getting-started-creating-an-aws-account)
+   - [Setting Up Billing Preferences, Budgets, and Alarms](#setting-up-billing-preferences-budgets-and-alarms)
+   - [IAM User Management and Security Best Practices](#iam-user-management-and-security-best-practices)
 
-5. **[Key AWS Services Explained](#key-aws-services-explained)**
-   - Amazon EC2 (Elastic Compute Cloud)
-   - AWS Systems Manager Session Manager
-   - Amazon Machine Images (AMIs)
+4. **[Introduction to AWS Regions and Hands-On Concepts](#introduction-to-aws-regions-and-hands-on-concepts)**
+   - [What is a Region in AWS?](#what-is-a-region-in-aws)
+   - [When Do We Use AWS Regions?](#when-do-we-use-aws-regions)
+   - [Hands-On: Switching AWS Regions](#hands-on-switching-aws-regions)
+
+5. **[Amazon EC2 (Elastic Compute Cloud)](#amazon-ec2-elastic-compute-cloud)**
+   - [Introduction to EC2](#introduction-to-ec2)
+   - [Key Concepts of EC2](#key-concepts-of-ec2)
+   - [Hands-On Steps: Launching an EC2 Instance](#hands-on-steps-launching-an-ec2-instance)
+
+6. **[AWS Systems Manager Session Manager](#aws-systems-manager-session-manager)**
+   - [Introduction to Session Manager](#introduction-to-session-manager)
+   - [Key Concepts of Session Manager](#key-concepts-of-session-manager)
+   - [Hands-On Steps: Using Session Manager](#hands-on-steps-using-session-manager)
+
+7. **[Amazon Machine Images (AMIs)](#amazon-machine-images-amis)**
+   - [Introduction to AMIs](#introduction-to-amis)
+   - [Key Concepts of AMIs](#key-concepts-of-amis)
+   - [Hands-On Steps: Creating and Using an AMI](#hands-on-steps-creating-and-using-an-ami)
 
 
 ---
