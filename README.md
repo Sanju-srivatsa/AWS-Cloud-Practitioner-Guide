@@ -1,6 +1,10 @@
 
 ## **AWS and Cloud Computing Guide**
 
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/2288ea28-d3f4-42c4-9437-cfcded457f7a" width="80%">
+</div>
+
 ### **Table of Contents**
 
 
