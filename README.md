@@ -312,15 +312,15 @@ For example, suppose one of your application servers starts showing errors, and 
 AWS Systems Manager Session Manager provides a secure, scalable, and auditable way to manage your cloud instances. It eliminates the complexities associated with traditional remote connection methods, making it an ideal choice for enterprises looking to streamline operations and enhance security. Whether you're a system administrator needing quick access to servers or a developer needing to debug an application, Session Manager simplifies these tasks while keeping your infrastructure secure.
 
 ---
-### Topic: Amazon Machine Images (AMIs)
+### Amazon Machine Images (AMIs)
 
-#### Introduction in the Simplest Way
+#### Introduction
 
 Imagine you're a chef who's perfected a complex recipe that you want to recreate reliably every time you cook. Instead of starting from scratch each time, you prepare a master mix containing all your pre-measured spices and ingredients, allowing you to cook the dish consistently and efficiently. 
 
 An Amazon Machine Image (AMI) works similarly in the cloud computing world. It is a pre-configured snapshot of a server's environment, including the operating system, installed software, and settings. This snapshot can be used to quickly launch new virtual servers (instances) with the same setup, ensuring consistency, reducing setup time, and increasing reliability across cloud environments.
 
-#### Real-Life Example: Fast Deployment for Startups
+#### Real-World Example: Fast Deployment for Startups
 
 A startup developing a web application needs to quickly scale its operations due to sudden user growth. Initially, setting up each server individually could take hours or even days. With AMIs, they create a base server image after configuring their first server with all necessary software and settings. Whenever they need to expand their capacity, they use this AMI to launch new servers in minutes, ensuring all servers are identically configured and can handle the increased load efficiently.
 
