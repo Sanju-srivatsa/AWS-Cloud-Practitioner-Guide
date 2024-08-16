@@ -274,7 +274,7 @@ AWS Regions play a crucial role in the deployment and management of cloud resour
 ---
 ### Amazon EC2 (Elastic Compute Cloud)
 
-#### Introduction
+#### Introduction to EC2
 
 Imagine you are planning a large party and need to set up several temporary stalls and booths. Instead of building these structures from scratch each time, you rent them, set them up quickly for the event, and then return them once the party is over. 
 
@@ -284,7 +284,7 @@ Amazon EC2 (Elastic Compute Cloud) provides a similar service but in the digital
 
 Consider an e-commerce company that sees a significant increase in traffic during holiday seasons. Managing this surge with physical servers would require predicting traffic, buying, and setting up enough servers in advance, which is both costly and inflexible. With EC2, the company can instead instantly add more virtual servers as traffic increases and then reduce the number as it normalizes, ensuring efficient handling of traffic spikes while optimizing costs.
 
-#### Key Concepts
+#### Key Concepts of EC2
 
 1. **Instances**: Virtual servers in EC2 where you run applications. They can vary in size, power, and memory, tailored to different types of workloads.
 2. **Instance Types**: EC2 offers a variety of instance types optimized for different tasks, such as compute-optimized instances for heavy processing or memory-optimized instances for applications that use large datasets.
@@ -339,7 +339,7 @@ Amazon EC2 offers a flexible and cost-effective solution to manage varying compu
 ---
 ### AWS Systems Manager Session Manager
 
-#### Introduction 
+#### Introduction to Session Manager
 
 Imagine you're a building manager responsible for maintaining several buildings. Instead of traveling to each location for inspections, you have cameras and remote controls in each building, allowing you to check and manage everything from your office. 
 
@@ -349,7 +349,7 @@ AWS Systems Manager Session Manager offers a similar convenience for managing se
 
 A company's IT team needs to manage hundreds of servers that host their web applications, databases, and back-office systems. Traditionally, each server would require separate network configurations and SSH key management, which is both time-consuming and prone to security risks. With Session Manager, the IT team can securely access any server within their AWS environment directly from the AWS Management Console or through automated scripts. This capability is crucial, especially when dealing with urgent updates or security patches that need to be applied quickly across all servers.
 
-#### Key Concepts
+#### Key Concepts of Session Manager
 
 1. **Secure Access**: Session Manager provides a secure access point to manage AWS instances without needing SSH keys or open inbound ports.
 2. **Centralized Management**: It allows centralized management of instances through the AWS console, CLI, or SDKs.
@@ -397,7 +397,7 @@ AWS Systems Manager Session Manager streamlines the process of managing servers 
 ---
 ### Amazon Machine Images (AMIs)
 
-#### Introduction
+#### Introduction to AMIs
 
 Imagine you're a chef who's perfected a complex recipe that you want to recreate reliably every time you cook. Instead of starting from scratch each time, you prepare a master mix containing all your pre-measured spices and ingredients, allowing you to cook the dish consistently and efficiently. 
 
@@ -407,7 +407,7 @@ An Amazon Machine Image (AMI) works similarly in the cloud computing world. It i
 
 A startup developing a web application needs to quickly scale its operations due to sudden user growth. Initially, setting up each server individually could take hours or even days. With AMIs, they create a base server image after configuring their first server with all necessary software and settings. Whenever they need to expand their capacity, they use this AMI to launch new servers in minutes, ensuring all servers are identically configured and can handle the increased load efficiently.
 
-#### Key Concepts
+#### Key Concepts of AMIs
 
 1. **Template for Launch**: AMIs act as templates to launch new EC2 instances, ensuring every instance starts with the same configuration.
 2. **Components**: An AMI includes one or more EBS snapshots (if EBS-backed), the instance's operating system, applications, and configuration settings.
