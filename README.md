@@ -1,4 +1,34 @@
 
+## **Comprehensive AWS and Cloud Computing Guide**
+
+### **Table of Contents**
+
+1. **[Introduction to Cloud Computing and AWS](#introduction-to-cloud-computing-and-aws)**
+   - What is AWS?
+   - What is Cloud Computing?
+   - Key Benefits of Cloud Computing
+
+2. **[Understanding AWS Global Infrastructure](#understanding-aws-global-infrastructure)**
+   - AWS Regions
+   - Availability Zones (AZs)
+   - AWS Edge Locations
+   - Local Zones
+
+3. **[Navigating AWS Services](#navigating-aws-services)**
+   - Types of Cloud Computing Services
+   - Cloud Computing Deployment Models
+
+4. **[Getting Started with AWS](#getting-started-with-aws)**
+   - Creating an AWS Account
+   - Setting Up Billing Preferences, Budgets, and Alarms
+   - IAM User Management and Security Best Practices
+
+5. **[Key AWS Services Explained](#key-aws-services-explained)**
+   - Amazon EC2 (Elastic Compute Cloud)
+   - AWS Systems Manager Session Manager
+   - Amazon Machine Images (AMIs)
+
+
 ---
 
 ## **AWS Guide: Understanding Cloud Computing**
