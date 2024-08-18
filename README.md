@@ -49,11 +49,11 @@
    - [Key Concepts of AMIs](#key-concepts-of-amis)
    - [Hands-On Steps: Creating and Using an AMI](#hands-on-steps-creating-and-using-an-ami)
 
-8. **[Introduction to AWS Auto Scaling Groups](#introduction-to-aws-auto-scaling-groups)**
-   - [Real-World Example: E-commerce Traffic Surge](#real-world-example-e-commerce-traffic-surge)
+8. **[AWS Auto Scaling Groups](#introduction-to-aws-auto-scaling-groups)**
+   - [Introduction to AWS Auto Scaling Groups](#introduction-to-aws-auto-scaling-groups)
    - [Key Concepts](#key-concepts)
    - [Hands-On Steps: Setting Up Auto Scaling Groups](#hands-on-steps-setting-up-auto-scaling-groups)
-   - [Conclusion](#conclusion)
+   
 ---
 
 ## **AWS Guide: Understanding Cloud Computing**
