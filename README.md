@@ -64,6 +64,12 @@
     - [Key Concepts of AWS S3](#key-concepts)
     - [Hands-On Steps: Using AWS S3](#hands-on-steps-using-aws-s3)
 
+11. **[AWS CloudFront: Content Delivery Network](#aws-cloudfront-content-delivery-network)**
+    - [Introduction to AWS CloudFront](#introduction-to-aws-cloudfront)
+    - [Key Concepts of CloudFront](#key-concepts)
+    - [Hands-On Steps: Setting Up AWS CloudFront](#hands-on-steps-setting-up-aws-cloudfront)
+
+
 ---
 
 ## **AWS Guide: Understanding Cloud Computing**
@@ -628,6 +634,63 @@ Consider a media company that manages thousands of video files for streaming. Th
 #### **Conclusion**
 
 AWS S3 offers a flexible, scalable, and secure storage solution suitable for businesses of all sizes. By leveraging S3, you can efficiently manage and access vast amounts of data, ensuring it is protected and available whenever needed. Whether for website hosting, backup and recovery, or content distribution, S3 provides the tools necessary to support diverse storage requirements.
+
+
+### **AWS CloudFront: Content Delivery Network**
+
+#### **Introduction to AWS CloudFront**
+
+Imagine you're organizing a global art exhibition. To ensure everyone around the world can view the artwork simultaneously without delays, you'd set up multiple exhibition sites in different cities. AWS CloudFront operates similarly but in the digital space. It's a content delivery network (CDN) that distributes your content—like images, videos, and applications—closer to your users, speeding up the delivery and improving user experience across the globe.
+
+CloudFront is integrated with AWS services, such as Amazon S3, EC2, and Elastic Load Balancing, allowing you to deliver your entire website or application with low latency and high transfer speeds. It helps protect your applications against network and application layer attacks.
+
+#### **Real-World Example: Global Online Education Platform**
+
+Consider an online education platform that offers courses to students worldwide. High-quality video lessons need to be delivered seamlessly to provide a smooth learning experience. CloudFront can distribute these videos from the nearest geographical location to the student, minimizing load times and buffering, no matter where the students are located.
+
+#### **Key Concepts**
+
+1. **CDNs**: CloudFront is a CDN that caches copies of your content in multiple locations worldwide. These locations are known as edge locations.
+2. **Edge Locations**: Servers in these locations cache copies of your content, so it’s delivered quickly to users no matter where they are.
+3. **Low Latency**: By serving content from the nearest edge location, CloudFront reduces latency, providing a faster user experience.
+4. **Integration**: Seamlessly integrates with other AWS services to secure and accelerate the delivery of your content.
+5. **Security**: Offers features like AWS Shield for DDoS protection and supports custom SSL certificates to secure your content delivery.
+
+#### **Hands-On Steps: Setting Up AWS CloudFront**
+
+##### **Creating a CloudFront Distribution**
+
+1. **Select a Source**:
+   - Log into the AWS Management Console.
+   - Navigate to the CloudFront service.
+   - Choose whether your content will be delivered from an Amazon S3 bucket, an EC2 instance, or an Elastic Load Balancer.
+
+2. **Create a New Distribution**:
+   - Click on 'Create Distribution'.
+   - Choose the delivery method for your content: Web (for websites) or RTMP (for media streaming).
+   - Configure the distribution settings, including origin details, cache behavior, and distribution ID.
+
+3. **Set up Cache Behavior**:
+   - Define how CloudFront will handle different types of content, whether to cache it, and how long the cached content stays valid.
+   - Configure settings such as query string forwarding and cookies based on your application needs.
+
+##### **Optimizing and Securing the Distribution**
+
+1. **Secure Content Delivery**:
+   - Implement HTTPS by configuring SSL/TLS certificates to encrypt data transferred between CloudFront and users.
+   - Use signed URLs or cookies to control who can access your content.
+
+2. **Performance Optimization**:
+   - Configure CloudFront to compress files automatically for faster delivery.
+   - Use CloudFront’s geo-restriction features to restrict content delivery in specific geographic locations.
+
+3. **Monitoring and Managing Traffic**:
+   - Monitor access and usage statistics using AWS CloudWatch to adjust cache behaviors and improve performance.
+   - Use AWS Lambda@Edge to run custom code closer to users for personalized content delivery.
+
+#### **Conclusion**
+
+AWS CloudFront is a powerful tool for enhancing the speed and security of web content delivery across the globe. By leveraging CloudFront, businesses can ensure their users receive the fastest possible access to content, improving overall satisfaction and engagement. CloudFront not only accelerates content delivery but also provides robust security features to protect your applications and data from various online threats. Whether you're running a multimedia site, an e-commerce platform, or a mobile application, CloudFront offers the scalability and tools needed to support a dynamic online presence.
 
 ---
 This guide serves as an introduction to AWS and cloud computing fundamentals, providing key insights and practical knowledge for those new to the cloud.
