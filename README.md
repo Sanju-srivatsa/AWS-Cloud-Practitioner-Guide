@@ -78,7 +78,7 @@
     - [Introduction to AWS Lambda](#introduction-to-aws-lambda)
     - [Key Concepts of AWS Lambda](#key-concepts-of-aws-lambda)
     - [Hands-On Steps: Setting Up AWS Lambda](#hands-on-steps-setting-up-aws-lambda)
-    - 
+
 ---
 
 ## **AWS Guide: Understanding Cloud Computing**
