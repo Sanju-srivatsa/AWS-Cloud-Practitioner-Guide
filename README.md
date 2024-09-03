@@ -51,7 +51,7 @@
 
 8. **[AWS Auto Scaling Groups](#introduction-to-aws-auto-scaling-groups)**
    - [Introduction to AWS Auto Scaling Groups](#introduction-to-aws-auto-scaling-groups)
-   - [Key Concepts](#key-concepts)
+   - [Key Concepts of AWS Auto Scaling Groups](#key-concepts-of-aws-auto-scaling-groups)
    - [Hands-On Steps: Setting Up Auto Scaling Groups](#hands-on-steps-setting-up-auto-scaling-groups)
 
 9. **[AWS Elastic Load Balancer](#introduction-to-aws-elastic-load-balancer)**
@@ -61,19 +61,24 @@
 
 10. **[AWS S3: Simple Storage Service](#introduction-to-aws-s3)**
     - [Introduction to AWS S3](#introduction-to-aws-s3)
-    - [Key Concepts of AWS S3](#key-concepts)
+    - [Key Concepts of AWS S3](#key-concepts-of-aws-s3)
     - [Hands-On Steps: Using AWS S3](#hands-on-steps-using-aws-s3)
 
 11. **[AWS CloudFront: Content Delivery Network](#aws-cloudfront-content-delivery-network)**
     - [Introduction to AWS CloudFront](#introduction-to-aws-cloudfront)
-    - [Key Concepts of CloudFront](#key-concepts)
+    - [Key Concepts of CloudFront](#key-concepts-of-aws-cloudfront)
     - [Hands-On Steps: Setting Up AWS CloudFront](#hands-on-steps-setting-up-aws-cloudfront)
 
 12. **[AWS Relational Database Service (RDS)](#introduction-to-aws-rds)**
     - [Introduction to AWS RDS](#introduction-to-aws-rds)
-    - [Key Concepts of AWS RDS](#key-concepts)
+    - [Key Concepts of AWS RDS](#key-concepts-of-aws-rds)
     - [Hands-On Steps: Setting Up AWS RDS](#hands-on-steps-setting-up-aws-rds)
 
+13. **[AWS Lambda: Serverless Computing](#aws-lambda-serverless-computing)**
+    - [Introduction to AWS Lambda](#introduction-to-aws-lambda)
+    - [Key Concepts of AWS Lambda](#key-concepts-of-aws-lambda)
+    - [Hands-On Steps: Setting Up AWS Lambda](#hands-on-steps-setting-up-aws-lambda)
+    - 
 ---
 
 ## **AWS Guide: Understanding Cloud Computing**
@@ -484,7 +489,7 @@ In simpler terms, AWS Auto Scaling Groups (ASGs) provide a mechanism to automati
 
 Consider an e-commerce website that experiences variable traffic levels. During a sale or promotional event, the site might experience a high influx of visitors, demanding more computing resources to maintain performance. Auto Scaling Groups can automatically increase the number of Amazon EC2 instances during these peak times to handle the surge and then decrease them during normal traffic levels to reduce costs.
 
-### Key Concepts
+### Key Concepts of AWS Auto Scaling Groups
 
 1. **Dynamic Scaling**: ASGs adjust the number of instances automatically based on predefined rules and real-time demand, ensuring that the application has enough resources to operate efficiently without manual intervention.
 2. **Health Checks**: Regular checks are performed on instances to ensure they are operational. If an instance fails a health check, it is automatically replaced, ensuring the application's availability and reliability.
@@ -540,7 +545,7 @@ Elastic Load Balancer helps distribute incoming application or network traffic a
 
 Consider a retail website during a Black Friday sale. The sudden spike in visitor traffic could overwhelm a single server, causing slowdowns or crashes that could deter customers and lead to lost sales. An Elastic Load Balancer automatically distributes incoming traffic across several servers, ensuring the website remains stable and responsive, even under heavy load.
 
-### Key Concepts
+### Key Concepts of AWS Elastic Load Balancer
 
 1. **Traffic Distribution**: ELB efficiently routes client requests across all servers capable of fulfilling those requests. It ensures that the workload is evenly distributed so that no single server becomes a bottleneck.
 2. **Fault Tolerance**: ELB detects unhealthy instances within a pool and automatically reroutes traffic to healthy instances until the unhealthy instances are restored.
@@ -590,7 +595,7 @@ S3 is designed for high durability and availability, storing data across multipl
 
 Consider a media company that manages thousands of video files for streaming. These files need to be readily accessible to viewers at any time and from any device. Using AWS S3, the company can store their media files securely and deliver them efficiently to users around the world without worrying about running out of storage space or losing data.
 
-#### **Key Concepts**
+#### **Key Concepts of AWS S3**
 
 1. **Buckets**: S3 organizes data in containers called buckets, akin to directories or folders on a personal computer.
 2. **Objects**: Each piece of data stored in S3 is referred to as an object, which resides within a bucket. An object includes the file itself and metadata describing the file.
@@ -652,7 +657,7 @@ CloudFront is integrated with AWS services, such as Amazon S3, EC2, and Elastic 
 
 Consider an online education platform that offers courses to students worldwide. High-quality video lessons need to be delivered seamlessly to provide a smooth learning experience. CloudFront can distribute these videos from the nearest geographical location to the student, minimizing load times and buffering, no matter where the students are located.
 
-#### **Key Concepts**
+#### **Key Concepts of AWS CloudFront**
 
 1. **CDNs**: CloudFront is a CDN that caches copies of your content in multiple locations worldwide. These locations are known as edge locations.
 2. **Edge Locations**: Servers in these locations cache copies of your content, so it’s delivered quickly to users no matter where they are.
@@ -709,7 +714,7 @@ RDS makes it easy to set up, operate, and scale a relational database in the clo
 
 Consider an e-commerce platform that experiences varying traffic, especially high during holidays and sales events. Managing database servers to handle such fluctuating demand could be complex and costly. AWS RDS enables the e-commerce site to scale its database resources up or down automatically, depending on the traffic, ensuring stable performance and efficient cost management.
 
-#### **Key Concepts**
+#### **Key Concepts of AWS RDS**
 
 1. **Database Engines**: AWS RDS supports several database engines including Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle Database, and SQL Server, giving you the flexibility to choose the appropriate database for your needs.
 2. **Automated Backups**: RDS automates backups of your database, storing them securely in Amazon S3, and allows you to recover your database to any point within the retention period.
@@ -741,6 +746,55 @@ Consider an e-commerce platform that experiences varying traffic, especially hig
 #### **Conclusion**
 
 AWS RDS provides a robust and scalable relational database management solution that automates complex administrative tasks, enabling businesses to enhance efficiency and reduce overhead costs associated with database operations. By leveraging RDS, organizations can ensure their database environments are highly available, secure, and optimized for their applications.
+
+### **AWS Lambda**
+
+#### **Introduction to AWS Lambda**
+
+Imagine you're at a party and instead of cooking all the food yourself, you call a chef each time a guest wants a dish. The chef prepares the meal on demand and leaves without needing space in your kitchen. AWS Lambda works similarly in the cloud computing world. It lets you run code in response to events without provisioning or managing servers, which means you only use resources when your functions are actually running.
+
+Lambda is AWS's event-driven, serverless computing platform. It executes your code only when needed and scales automatically, from a few requests per day to thousands per second.
+
+#### **Real-World Example: Processing User-Uploaded Images**
+
+Consider a web application that allows users to upload photos. Managing servers to handle image processing could be overkill, especially with variable upload rates. With Lambda, you can run code to process images only when a user uploads them, without maintaining idle servers. This setup is cost-effective and scales with the application's usage.
+
+#### **Key Concepts of AWS Lambda**
+
+1. **Event-driven Execution**: AWS Lambda runs your code in response to events such as changes in data within AWS S3, updates to DynamoDB tables, or HTTP requests via API Gateway.
+2. **Scaling**: Automatically scales your application by running code in response to each trigger. Your code runs in parallel and processes each trigger individually.
+3. **Stateless**: No affinity to the underlying infrastructure. You can quickly deploy or update your application.
+4. **Cost-effective**: You pay only for the compute time you consume - there's no charge when your code isn't running.
+5. **Integration**: Easily integrates with other AWS services to create robust, scalable applications.
+
+#### **Hands-On Steps: Setting Up AWS Lambda**
+
+1. **Create a Lambda Function**:
+   - Go to the AWS Management Console.
+   - Open the Lambda service and select "Create function".
+   - Choose "Author from scratch", name your function, and select the runtime for your code (e.g., Node.js, Python).
+
+2. **Configure Triggers**:
+   - Set up the event source that will trigger your function, such as changes in an S3 bucket or a DynamoDB table.
+
+3. **Implement Function Code**:
+   - Write the code that will be executed when your function is triggered.
+   - Use the inline editor in the Lambda console or upload your code as a ZIP file.
+
+4. **Set Permissions**:
+   - Define the role that grants your Lambda function permissions to access other AWS resources.
+
+5. **Test the Function**:
+   - Configure test events in the Lambda console to simulate event sources.
+   - Invoke your function manually using these events to validate its behavior.
+
+6. **Monitor and Optimize**:
+   - Use AWS CloudWatch to monitor the execution and performance of your Lambda functions.
+   - Adjust resources (e.g., memory allocation) and optimize your code based on the insights.
+
+#### **Conclusion**
+
+AWS Lambda offers a powerful solution for running backend code that responds to events, eliminating the need for server management. It supports rapid deployment and automatic scaling, making it ideal for applications with variable workloads and for developers looking to build event-driven solutions.
 
 ---
 This guide serves as an introduction to AWS and cloud computing fundamentals, providing key insights and practical knowledge for those new to the cloud.
